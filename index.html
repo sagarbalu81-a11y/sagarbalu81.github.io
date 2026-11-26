@@ -1,446 +1,266 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="K.R.K.K SAGAR LOHIA, Advocate — M/s. K. L. Advocates and Associates, Khairatabad, Hyderabad, Telangana. Contact the office for legal enquiries.">
-  <meta name="theme-color" content="#101f33">
-  <title>K.R.K.K SAGAR LOHIA, Advocate | K. L. Advocates &amp; Associates</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="M/s. K. L. Advocates and Associates, Hyderabad — civil, criminal, consumer, corporate, intellectual property and regulatory legal services.">
+  <meta name="theme-color" content="#081a33">
+  <title>M/s. K. L. Advocates and Associates | Hyderabad</title>
   <style>
-    :root {
-      --navy: #101f33;
-      --navy-2: #182d46;
-      --gold: #c6a66b;
-      --gold-light: #e2cfaa;
-      --ink: #243142;
-      --muted: #667386;
-      --paper: #f7f6f2;
-      --white: #fff;
-      --line: #e5e0d6;
-      --shadow: 0 18px 50px rgba(16,31,51,.10);
-    }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      color: var(--ink);
-      background: var(--paper);
-      font-family: Georgia, "Times New Roman", serif;
-      line-height: 1.7;
-    }
-    a { color: inherit; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .wrap { width: min(1120px, 88%); margin: 0 auto; }
-    .topbar {
-      background: #0b1727;
-      color: #e8edf3;
-      font: 12px/1.5 Arial, sans-serif;
-      letter-spacing: .04em;
-    }
-    .topbar-inner {
-      min-height: 39px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 12px;
-      flex-wrap: wrap;
-      padding: 8px 0;
-    }
-    .topbar a { color: var(--gold-light); }
-    header {
-      position: relative;
-      z-index: 2;
-      color: var(--white);
-      background: var(--navy);
-      border-bottom: 1px solid rgba(198,166,107,.35);
-    }
-    .nav {
-      min-height: 82px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 24px;
-    }
-    .identity { display: flex; align-items: center; gap: 14px; }
-    .monogram {
-      width: 48px; height: 48px;
-      display: grid; place-items: center;
-      border: 1px solid var(--gold);
-      color: var(--gold-light);
-      font-size: 18px;
-      letter-spacing: .04em;
-    }
-    .firm {
-      color: var(--white);
-      font-size: 15px;
-      line-height: 1.35;
-      letter-spacing: .075em;
-      text-transform: uppercase;
-    }
-    .firm small {
-      display: block;
-      margin-top: 4px;
-      color: var(--gold-light);
-      font: 10px Arial, sans-serif;
-      letter-spacing: .18em;
-    }
-    .navlinks {
-      display: flex;
-      align-items: center;
-      gap: 25px;
-      color: #e8edf3;
-      font: 12px Arial, sans-serif;
-      letter-spacing: .07em;
-      text-transform: uppercase;
-    }
-    .navlinks a:hover { color: var(--gold-light); text-decoration: none; }
-    .hero {
-      position: relative;
-      overflow: hidden;
-      color: var(--white);
-      background:
-        radial-gradient(circle at 85% 35%, rgba(198,166,107,.16), transparent 27%),
-        linear-gradient(115deg, var(--navy), var(--navy-2));
-    }
-    .hero::after {
-      content: "§";
-      position: absolute;
-      right: 7%;
-      top: 50%;
-      transform: translateY(-54%);
-      color: rgba(226,207,170,.075);
-      font-size: clamp(220px, 32vw, 430px);
-      line-height: 1;
-      pointer-events: none;
-    }
-    .hero-inner {
-      position: relative;
-      z-index: 1;
-      min-height: 465px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      padding: 76px 0 82px;
-    }
-    .eyebrow {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin: 0 0 22px;
-      color: var(--gold-light);
-      font: 11px Arial, sans-serif;
-      letter-spacing: .22em;
-      text-transform: uppercase;
-    }
-    .eyebrow::before { content: ""; width: 42px; height: 1px; background: var(--gold); }
-    h1 {
-      max-width: 780px;
-      margin: 0;
-      color: var(--white);
-      font-size: clamp(38px, 6vw, 68px);
-      font-weight: normal;
-      line-height: 1.08;
-      letter-spacing: .015em;
-    }
-    .role {
-      margin: 18px 0 0;
-      color: var(--gold-light);
-      font: 600 14px Arial, sans-serif;
-      letter-spacing: .25em;
-      text-transform: uppercase;
-    }
-    .hero-firm {
-      margin: 12px 0 0;
-      color: #e4e9ef;
-      font-size: clamp(18px, 2.5vw, 23px);
-      letter-spacing: .035em;
-    }
-    .hero-copy {
-      max-width: 610px;
-      margin: 20px 0 0;
-      color: #cbd5df;
-      font: 14px/1.9 Arial, sans-serif;
-    }
-    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
-    .button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 46px;
-      padding: 0 21px;
-      border: 1px solid var(--gold);
-      background: var(--gold);
-      color: #142238;
-      font: bold 11px Arial, sans-serif;
-      letter-spacing: .11em;
-      text-transform: uppercase;
-      transition: .2s ease;
-    }
-    .button:hover { background: var(--gold-light); text-decoration: none; }
-    .button.outline { background: transparent; color: var(--white); }
-    .button.outline:hover { background: rgba(255,255,255,.08); }
-    .section { padding: 78px 0; }
-    .section.white { background: var(--white); }
-    .section-head { max-width: 720px; margin-bottom: 34px; }
-    .kicker {
-      margin: 0 0 10px;
-      color: #9a7944;
-      font: 11px Arial, sans-serif;
-      letter-spacing: .2em;
-      text-transform: uppercase;
-    }
-    h2 {
-      margin: 0 0 15px;
-      color: var(--navy);
-      font-size: clamp(29px, 4vw, 39px);
-      line-height: 1.2;
-      font-weight: normal;
-    }
-    .section-head p, .about-copy {
-      margin: 0;
-      color: var(--muted);
-      font-size: 16px;
-    }
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1.1fr .9fr;
-      gap: 50px;
-      align-items: start;
-    }
-    .principle {
-      padding: 28px 30px;
-      background: var(--navy);
-      color: var(--white);
-      border-top: 3px solid var(--gold);
-      box-shadow: var(--shadow);
-    }
-    .principle h3 {
-      margin: 0 0 12px;
-      color: var(--gold-light);
-      font-size: 21px;
-      font-weight: normal;
-    }
-    .principle p { margin: 0; color: #d5dde6; font: 14px/1.85 Arial, sans-serif; }
-    .service-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-    }
-    .service {
-      min-height: 174px;
-      padding: 25px 23px;
-      background: var(--white);
-      border: 1px solid var(--line);
-      border-top: 2px solid var(--gold);
-    }
-    .service .number {
-      display: block;
-      margin-bottom: 15px;
-      color: #a88955;
-      font: 11px Arial, sans-serif;
-      letter-spacing: .16em;
-    }
-    .service h3 { margin: 0 0 8px; color: var(--navy); font-size: 19px; font-weight: normal; }
-    .service p { margin: 0; color: var(--muted); font: 13px/1.75 Arial, sans-serif; }
-    .contact-section { background: #f0eee8; }
-    .contact-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-    }
-    .contact-card {
-      padding: 25px 23px;
-      background: var(--white);
-      border: 1px solid var(--line);
-    }
-    .contact-card h3 {
-      margin: 0 0 11px;
-      color: #9a7944;
-      font: 11px Arial, sans-serif;
-      letter-spacing: .17em;
-      text-transform: uppercase;
-    }
-    .contact-card p { margin: 0; color: var(--ink); font-size: 15px; overflow-wrap: anywhere; }
-    .contact-card a { color: #173b60; }
-    .contact-note { margin: 26px 0 0; color: var(--muted); font: 12px/1.7 Arial, sans-serif; }
-    footer {
-      padding: 27px 0;
-      color: #cbd5df;
-      background: #0b1727;
-      text-align: center;
-      font: 12px/1.8 Arial, sans-serif;
-    }
-    footer strong { color: var(--gold-light); font-weight: normal; }
-    @media (max-width: 800px) {
-      .nav { padding: 15px 0; align-items: flex-start; flex-direction: column; }
-      .navlinks { flex-wrap: wrap; gap: 13px 20px; }
-      .about-grid { grid-template-columns: 1fr; gap: 28px; }
-      .service-grid { grid-template-columns: repeat(2, 1fr); }
-      .contact-grid { grid-template-columns: 1fr 1fr; }
-    }
-    @media (max-width: 540px) {
-      .wrap { width: 88%; }
-      .topbar-inner { justify-content: center; text-align: center; }
-      .hero-inner { min-height: 420px; padding: 62px 0; }
-      .service-grid, .contact-grid { grid-template-columns: 1fr; }
-      .section { padding: 58px 0; }
-      .monogram { width: 42px; height: 42px; }
-      .firm { font-size: 13px; }
-    }
+    :root{--navy:#081a33;--navy2:#102b4d;--gold:#c9a45c;--cream:#f7f4ed;--ink:#1d2938;--muted:#667386;--white:#fff;--line:#e6e0d4}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Georgia,"Times New Roman",serif;color:var(--ink);background:#fff;line-height:1.65}
+    a{color:inherit}.topbar{background:#061326;color:#e9dfc9;font:13px Arial,sans-serif;padding:9px 5%;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    header{background:var(--navy);color:#fff;border-bottom:3px solid var(--gold);position:sticky;top:0;z-index:10}
+    .navwrap{max-width:1180px;margin:auto;padding:17px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:13px;text-decoration:none}.monogram{width:48px;height:48px;border:1px solid var(--gold);color:var(--gold);display:grid;place-items:center;font-size:17px;font-weight:bold;letter-spacing:1px}
+    .brand strong{display:block;font-size:18px;letter-spacing:.4px}.brand small{display:block;color:#d8c69e;font:11px Arial,sans-serif;letter-spacing:2px;text-transform:uppercase}
+    nav{display:flex;gap:18px;flex-wrap:wrap}nav a{font:12px Arial,sans-serif;text-decoration:none;color:#f5f1e8}nav a:hover{color:var(--gold)}
+    .hero{background:linear-gradient(115deg,rgba(6,19,38,.97),rgba(16,43,77,.9)),radial-gradient(circle at 80% 30%,#49617a,#081a33);color:#fff;padding:92px 22px 86px}
+    .hero-inner{max-width:1100px;margin:auto}.eyebrow{color:var(--gold);font:12px Arial,sans-serif;letter-spacing:3px;text-transform:uppercase}
+    h1{font-size:clamp(36px,5vw,58px);line-height:1.12;max-width:850px;margin:18px 0}.hero p{max-width:760px;color:#e1e7ef;font-size:18px}
+    .hero-actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-block;padding:12px 20px;text-decoration:none;font:13px Arial,sans-serif;letter-spacing:.4px;border:1px solid var(--gold)}
+    .btn.gold{background:var(--gold);color:#101d2e}.btn.outline{color:#fff}
+    .wrap{max-width:1100px;margin:auto;padding:72px 22px}.section-head{max-width:760px;margin-bottom:32px}.section-head .eyebrow{color:#9a7538}
+    h2{font-size:clamp(29px,3.5vw,40px);line-height:1.2;color:var(--navy);margin:9px 0 14px}h3{color:var(--navy);font-size:21px;margin:0 0 10px}.service-subtitle{color:#8a672e;font:600 14px Arial,sans-serif;letter-spacing:.2px;margin:22px 0 7px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+    .intro{font-size:17px;color:#526174}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+    .service{padding:25px;background:var(--cream);border-top:3px solid var(--gold)}.service p{margin:8px 0;color:#526174}.service ul{padding-left:20px;margin:10px 0 0}.service li{padding:3px 0}
+    .subgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 25px}.subgrid ul{margin:0;padding-left:20px}
+    .consumer{background:#f7f4ed}.consumer-detail{display:grid;grid-template-columns:1fr 1fr;gap:25px}.consumer-detail article{background:#fff;padding:25px;border:1px solid var(--line)}
+    .pill{display:inline-block;background:#eee5d2;color:#634b20;padding:4px 9px;font:11px Arial,sans-serif;letter-spacing:.5px;text-transform:uppercase;margin-bottom:10px}
+    .court-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.court{padding:16px 18px;border:1px solid var(--line);background:#fff}.court strong{display:block;color:var(--navy)}.maplink{display:inline-block;margin-top:9px;color:#8a672e;font:12px Arial,sans-serif;text-decoration:none;border-bottom:1px solid #c9a45c}.maplink:hover{color:var(--navy)}
+    .note{font:13px Arial,sans-serif;color:var(--muted);background:#f4f6f8;padding:14px 16px;border-left:3px solid var(--gold);margin-top:22px}
+    .contact{background:var(--navy);color:#fff}.contact h2{color:#fff}.contact p{color:#dce4ed}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}.contact a{color:#e6c985}
+    footer{background:#061326;color:#cbd3de;text-align:center;padding:22px;font:12px Arial,sans-serif}
+    @media(max-width:760px){.navwrap{align-items:flex-start;flex-direction:column}nav{gap:12px}.grid,.consumer-detail,.contact-grid,.subgrid{grid-template-columns:1fr}.court-list{grid-template-columns:1fr 1fr}.hero{padding:68px 22px}}
+    @media(max-width:430px){.court-list{grid-template-columns:1fr}.brand strong{font-size:16px}}
   </style>
 </head>
 <body>
   <div class="topbar">
-    <div class="wrap topbar-inner">
-      <span>Khairatabad, Hyderabad · Telangana</span>
-      <span><a href="mailto:kladvocateoffice@gmail.com">kladvocateoffice@gmail.com</a></span>
-    </div>
+    <span>Legal Services • Hyderabad, Telangana</span>
+    <span><a href="tel:+919000007954">9000007954</a> &nbsp;|&nbsp; <a href="tel:+917989067954">7989067954</a> &nbsp;|&nbsp; <a href="mailto:kladvocateoffice@gmail.com">kladvocateoffice@gmail.com</a></span>
   </div>
-
   <header>
-    <div class="wrap nav">
-      <a class="identity" href="#home" aria-label="K. L. Advocates and Associates home">
+    <div class="navwrap">
+      <a class="brand" href="#home" aria-label="M/s. K. L. Advocates and Associates home">
         <span class="monogram">KL</span>
-        <span class="firm">K. L. Advocates &amp; Associates<small>Legal Office · Hyderabad</small></span>
+        <span><strong>M/s. K. L. Advocates and Associates</strong><small>Advocates • Legal Consultants</small></span>
       </a>
-      <nav class="navlinks" aria-label="Main navigation">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Legal services</a>
-        <a href="#contact">Contact</a>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a><a href="#civil">Civil</a><a href="#criminal">Criminal</a>
+        <a href="#consumer">Consumer</a><a href="#corporate">Corporate & IP</a><a href="#labour">Labour</a><a href="#courts">Courts</a><a href="#disclaimer">Disclaimer</a><a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <section class="hero" id="home">
-    <div class="wrap hero-inner">
-      <p class="eyebrow">Professional legal office</p>
-      <h1>K.R.K.K SAGAR LOHIA</h1>
-      <p class="role">Advocate</p>
-      <p class="hero-firm">M/s. K. L. Advocates and Associates</p>
-      <p class="hero-copy">
-        A legal office based in Khairatabad, Hyderabad, Telangana.
-        For office enquiries and consultation requests, please use the contact details below.
-      </p>
-      <div class="actions">
-        <a class="button" href="tel:+919000007954">Call office</a>
-        <a class="button outline" href="mailto:kladvocateoffice@gmail.com">Email office</a>
+  <main id="home">
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="eyebrow">Professional Legal Representation • Hyderabad</div>
+        <h1>Committed to clear advice and considered legal representation.</h1>
+        <p><strong>K.R.K.K SAGAR LOHIA</strong><br>M/s. K. L. Advocates and Associates provides legal services and representation in civil, criminal, consumer, commercial, corporate, intellectual property and regulatory matters before courts and authorities in Hyderabad and surrounding areas.</p>
+        <div class="hero-actions">
+          <a class="btn gold" href="mailto:kladvocateoffice@gmail.com">Email the Office</a>
+          <a class="btn outline" href="#services">Explore Legal Services</a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section white" id="about">
-    <div class="wrap about-grid">
-      <div>
-        <p class="kicker">About the office</p>
-        <h2>Legal assistance with a professional approach</h2>
-        <p class="about-copy">
-          M/s. K. L. Advocates and Associates is located at Khairatabad, Hyderabad.
-          The office provides a point of contact for individuals seeking legal assistance.
-          Please contact the office directly to discuss the nature of your matter,
-          appointment availability and the appropriate next steps.
-        </p>
-      </div>
-      <aside class="principle">
-        <h3>Office information</h3>
-        <p>
-          <strong>K.R.K.K SAGAR LOHIA</strong><br>
-          Advocate<br>
-          M/s. K. L. Advocates and Associates<br>
-          Khairatabad, Hyderabad – 500004, Telangana
-        </p>
-      </aside>
-    </div>
-  </section>
-
-  <section class="section" id="services">
-    <div class="wrap">
+    <section class="wrap" id="about">
       <div class="section-head">
-        <p class="kicker">Legal services</p>
-        <h2>Areas for legal enquiries</h2>
-        <p>
-          Contact the office to explain your matter and confirm whether assistance
-          is available in the relevant area of law.
-        </p>
+        <div class="eyebrow">About the Firm</div>
+        <h2>M/s. K. L. Advocates and Associates</h2>
+        <p class="intro">We assist individuals, families, businesses, associations and other organisations with legal advice, documentation, dispute resolution and court representation. Each matter is assessed on its facts, applicable law and the relief available before the appropriate court or authority.</p>
       </div>
-      <div class="service-grid">
-        <article class="service">
-          <span class="number">01</span>
-          <h3>Civil matters</h3>
-          <p>Enquiries relating to civil disputes and related legal proceedings.</p>
-        </article>
-        <article class="service">
-          <span class="number">02</span>
-          <h3>Criminal matters</h3>
-          <p>Enquiries relating to criminal proceedings and legal representation.</p>
-        </article>
-        <article class="service">
-          <span class="number">03</span>
-          <h3>Cheque dishonour matters</h3>
-          <p>Enquiries concerning proceedings under the Negotiable Instruments Act.</p>
-        </article>
-        <article class="service">
-          <span class="number">04</span>
-          <h3>Property matters</h3>
-          <p>Enquiries relating to property disputes and documentation.</p>
-        </article>
-        <article class="service">
-          <span class="number">05</span>
-          <h3>Consumer matters</h3>
-          <p>Enquiries concerning consumer disputes and complaints.</p>
-        </article>
-        <article class="service">
-          <span class="number">06</span>
-          <h3>Legal notices &amp; documentation</h3>
-          <p>Enquiries for preparation and review of legal notices and documents.</p>
-        </article>
-      </div>
-    </div>
-  </section>
+      <p>Our work includes preparation and review of legal notices, pleadings, affidavits, agreements, appeals, complaints, written statements and other legal documents, together with representation in appropriate proceedings. The services listed on this website describe areas in which the office may assist; the acceptance of any brief is subject to conflict checks, professional obligations and the facts of the matter.</p>
+    </section>
 
-  <section class="section contact-section" id="contact">
-    <div class="wrap">
+    <section class="wrap" id="services" style="padding-top:10px">
+      <div class="section-head"><div class="eyebrow">Practice Areas</div><h2>Legal Services</h2><p class="intro">A broad range of legal assistance for individuals, property owners, consumers, professionals and businesses.</p></div>
+      <div class="grid">
+        <article class="service" id="civil">
+          <h3>Civil Litigation & Dispute Resolution</h3>
+          <p>Assistance in civil proceedings involving rights in property, contractual obligations, personal and family disputes, succession, recovery of money and other civil remedies. Work may include legal opinion, title and document review, notices, pleadings, interim applications, evidence, arguments, execution and appellate proceedings, as appropriate to the matter.</p>
+
+          <h4 class="service-subtitle">Property, Land & Real Estate Disputes</h4>
+          <ul>
+            <li>Suit for declaration of title, ownership and other civil rights</li>
+            <li>Partition, separate possession and division of joint family or co-owned properties</li>
+            <li>Permanent, temporary and mandatory injunctions to protect possession or prevent interference</li>
+            <li>Cancellation or setting aside of sale deeds, gift deeds, settlement deeds, release deeds and other instruments, where legally maintainable</li>
+            <li>Specific performance of agreements of sale and other enforceable contracts</li>
+            <li>Disputes relating to agreements of sale, sale transactions, possession and delivery of property</li>
+            <li>Recovery of possession, eviction and mesne profits</li>
+            <li>Landlord and tenant disputes, lease disputes, rent arrears and termination of tenancy</li>
+            <li>Boundary, pathway, easement, right of way and encroachment disputes</li>
+            <li>Disputes concerning development agreements, joint development and construction contracts</li>
+            <li>Legal scrutiny of title documents, link documents and property-related records</li>
+          </ul>
+
+          <h4 class="service-subtitle">Money Recovery, Contracts & Commercial Civil Suits</h4>
+          <ul>
+            <li>Money recovery suits arising from loans, advances, unpaid invoices and other legally recoverable dues</li>
+            <li>Recovery of amounts under written agreements, promissory notes and other instruments</li>
+            <li>Summary suits and other expedited civil remedies, where the statutory requirements are satisfied</li>
+            <li>Breach of contract, damages, compensation and restitution claims</li>
+            <li>Disputes relating to business transactions, supply, services and commercial arrangements</li>
+            <li>Temporary injunctions, attachment before judgment and other interim reliefs, where justified</li>
+          </ul>
+
+          <h4 class="service-subtitle">Family & Matrimonial Matters</h4>
+          <ul>
+            <li>Divorce by mutual consent and contested divorce proceedings</li>
+            <li>Judicial separation and restitution of conjugal rights</li>
+            <li>Child custody, visitation/access, guardianship and welfare-related proceedings</li>
+            <li>Maintenance, interim maintenance and related proceedings</li>
+            <li>Proceedings under the Protection of Women from Domestic Violence Act, 2005</li>
+            <li>Return of stridhan, jewellery, personal belongings and other matrimonial articles</li>
+            <li>Family settlements and disputes relating to matrimonial and family properties</li>
+            <li>Enforcement, modification or challenge of family court orders, where maintainable</li>
+          </ul>
+
+          <h4 class="service-subtitle">Succession, Inheritance & Estate Matters</h4>
+          <ul>
+            <li>Legal Heir Certificate: guidance and assistance with applications, supporting documents and representations before the competent authority</li>
+            <li>Succession Certificate petitions in respect of eligible debts and securities of a deceased person, including petition drafting, evidence and court proceedings</li>
+            <li>Probate of wills and Letters of Administration, where applicable</li>
+            <li>Disputes concerning wills, inheritance, succession and estate administration</li>
+            <li>Partition and distribution of inherited and ancestral properties</li>
+            <li>Documentation and legal assistance relating to death records and succession-related claims</li>
+          </ul>
+
+          <h4 class="service-subtitle">Other Civil Proceedings & Remedies</h4>
+          <ul>
+            <li>Declaratory suits, mandatory injunctions and permanent injunctions</li>
+            <li>Compensation and damages claims arising from civil wrongs</li>
+            <li>Consumer-related civil remedies and other appropriate statutory proceedings</li>
+            <li>Execution petitions, enforcement of decrees and orders, and objections in execution</li>
+            <li>Appeals, revisions, review proceedings and applications for interim relief</li>
+            <li>Written statements, counters, rejoinders, affidavits and interlocutory applications</li>
+            <li>Pre-litigation legal notices, replies, settlement documentation and dispute resolution</li>
+          </ul>
+          <p class="note">The appropriate remedy, court and procedure depend on the documents, facts, limitation period, territorial and pecuniary jurisdiction and applicable law. Legal Heir Certificates and Succession Certificates are distinct documents issued or granted through different legal processes.</p>
+        </article>
+        <article class="service" id="criminal">
+          <h3>Criminal Litigation</h3>
+          <p>Legal assistance for complainants, accused persons and other parties, subject to the facts and applicable procedure.</p>
+          <ul>
+            <li>Criminal complaints and private complaints</li><li>Representation in Magistrate and Sessions Court proceedings</li><li>Bail, anticipatory bail and related applications</li><li>Quash petitions and criminal revisions before the High Court, where maintainable</li><li>Trial representation, discharge and defence strategy</li><li>Cheque bounce / cheque dishonour complaints under Section 138 of the Negotiable Instruments Act, 1881, including statutory demand notices, complaint drafting, evidence, trial and related applications</li><li>Defence in cheque dishonour cases, including reply notices, cross-examination and trial representation</li><li>Criminal appeals and revisions</li><li>Legal notices, replies and pre-litigation advice</li>
+          </ul>
+        </article>
+        <article class="service" id="corporate">
+          <h3>Company, Commercial Contracts & Business Advisory</h3>
+          <p>Drafting, vetting and negotiation support for business and commercial arrangements.</p>
+          <ul>
+            <li>Business and commercial agreements</li><li>Service, consultancy and employment contracts</li><li>Non-disclosure and confidentiality agreements</li><li>Vendor, supply, distribution and dealership agreements</li><li>Lease, licence and leave-and-licence documentation</li><li>Memoranda of Understanding and term sheets</li><li>Partnership, shareholder and joint venture arrangements</li><li>Contract review, breach notices and dispute support</li>
+          </ul>
+        </article>
+        <article class="service">
+          <h3>Intellectual Property</h3>
+          <p>Legal support for protection, use and enforcement of intellectual property rights.</p>
+          <ul>
+            <li>Trademark searches, applications and prosecution coordination</li><li>Trademark objections, oppositions and responses</li><li>Copyright-related advice and documentation</li><li>Brand licensing and assignment agreements</li><li>IP ownership, confidentiality and IP clauses in contracts</li><li>Cease-and-desist notices and infringement dispute assistance</li>
+          </ul>
+        </article>
+        <article class="service">
+          <h3>Labour & Employment Matters</h3>
+          <p>Advice and documentation for employers, employees and establishments.</p>
+          <ul>
+            <li>Employment and appointment documentation</li><li>Workplace policies and service conditions</li><li>Wage, salary and employment-related disputes</li><li>Termination, disciplinary and domestic enquiry matters</li><li>Labour department notices and representations</li><li>Registrations, licences and certificates under applicable labour laws</li><li>Conciliation and proceedings before competent labour authorities</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="consumer" id="consumer">
+      <div class="wrap">
+        <div class="section-head"><div class="eyebrow">Consumer Protection</div><h2>Consumer Disputes & Consumer Commission Proceedings</h2>
+          <p class="intro">Consumers may have remedies where goods are defective, services are deficient, or an unfair or restrictive trade practice causes legally recognised harm. We assist in assessing the dispute, preparing the complaint and pursuing appropriate relief under the Consumer Protection Act, 2019.</p>
+        </div>
+        <div class="consumer-detail">
+          <article><span class="pill">Types of consumer disputes</span><h3>Matters we can assist with</h3>
+            <ul>
+              <li>Deficiency in services by banks and financial institutions</li><li>Unauthorised charges, service failures and banking-related consumer disputes</li><li>Insurance claim delays, repudiation and settlement disputes</li><li>Defective products, warranty failures and replacement/refund disputes</li><li>Builder, developer and housing-related service disputes, where maintainable</li><li>Real-estate services and delayed or incomplete promised services</li><li>Medical and healthcare service disputes, subject to legal maintainability and facts</li><li>Telecom, internet, courier, travel and other service-related complaints</li><li>Misleading advertisements and unfair trade practices</li><li>Failure to deliver goods or provide services as promised</li><li>Non-refund of deposits, advance payments or consideration</li><li>Defective or incomplete event, photography and videography services</li>
+            </ul>
+          </article>
+          <article><span class="pill">How we assist</span><h3>From initial review to final relief</h3>
+            <ol>
+              <li><strong>Initial case assessment:</strong> Review invoices, receipts, agreements, messages, emails, warranty papers and other records to identify the consumer relationship, cause of action and appropriate forum.</li>
+              <li><strong>Pre-litigation steps:</strong> Prepare legal notices and replies, organise evidence and consider whether a settlement or other remedy is appropriate.</li>
+              <li><strong>Complaint drafting:</strong> Prepare the consumer complaint, list of dates, parties, facts, grounds, supporting affidavit, document list and specific prayer for relief.</li>
+              <li><strong>Filing and procedure:</strong> Assist with filing before the appropriate District, State or National Consumer Commission, subject to territorial and pecuniary jurisdiction and applicable procedure.</li>
+              <li><strong>Proceedings:</strong> Prepare responses to the opposite party's version, evidence affidavits, written arguments and applications, and represent the client at hearings.</li>
+              <li><strong>Relief and enforcement:</strong> Seek appropriate orders such as removal of defects, replacement, refund, compensation, costs or discontinuance of an unfair practice, as supported by law and evidence; assist with execution where required.</li>
+              <li><strong>Appeals:</strong> Advise on and prepare appeals or other remedies against orders, subject to limitation, deposit requirements and statutory conditions.</li>
+            </ol>
+          </article>
+        </div>
+        <div class="note">Consumer forum jurisdiction, limitation, maintainability and the relief available depend on the transaction value, consideration paid, place of cause of action, nature of service and current statutory rules. No particular result is guaranteed.</div>
+      </div>
+    </section>
+
+    <section class="wrap" id="courts">
+      <div class="section-head"><div class="eyebrow">Court & Forum Coverage</div><h2>Courts and Authorities</h2><p class="intro">The office undertakes matters before the following courts, commissions and legal forums in Hyderabad and surrounding areas, subject to jurisdiction and the nature of each case.</p></div>
+      <div class="court-list">
+        <div class="court"><strong>High Court for the State of Telangana</strong><span>Hyderabad</span><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Telangana+High+Court+High+Court+Road+Hyderabad" target="_blank" rel="noopener noreferrer">Open in Google Maps ↗</a></div>
+        <div class="court"><strong>Nampally Criminal Courts</strong><span>Hyderabad</span><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Metropolitan+Criminal+Courts+Red+Hills+Nampally+Hyderabad" target="_blank" rel="noopener noreferrer">Open in Google Maps ↗</a></div>
+        <div class="court"><strong>Manoranjan Complex</strong><span>Hyderabad</span><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Manoranjan+Complex+Nampally+Hyderabad+courts" target="_blank" rel="noopener noreferrer">Open in Google Maps ↗</a></div>
+        <div class="court"><strong>District Consumer Disputes Redressal Commission</strong><span>Hyderabad</span><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Hyderabad+District+Consumer+Commission+Chandra+Vihar+Complex+MJ+Road+Nampally" target="_blank" rel="noopener noreferrer">Open in Google Maps ↗</a></div>
+        <div class="court"><strong>Telangana State Consumer Disputes Redressal Commission</strong><span>Hyderabad</span><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Telangana+State+Consumer+Commission+Eruvaka+Building+Khairatabad+Hyderabad" target="_blank" rel="noopener noreferrer">Open in Google Maps ↗</a></div>
+        <div class="court"><strong>Ranga Reddy District Courts</strong><span>LB Nagar</span><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Ranga+Reddy+District+Court+NTR+Nagar+LB+Nagar+Hyderabad" target="_blank" rel="noopener noreferrer">Open in Google Maps ↗</a></div>
+        <div class="court"><strong>Medchal Courts</strong><span>Medchal–Malkajgiri District</span><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Medchal+Additional+District+Court+Medchal+Telangana" target="_blank" rel="noopener noreferrer">Open in Google Maps ↗</a></div>
+        <div class="court"><strong>Medipally Courts</strong><span>Medipally area</span><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Uppal+Court+Complex+Medipally+Hyderabad" target="_blank" rel="noopener noreferrer">Open in Google Maps ↗</a></div>
+        <div class="court"><strong>Malkajgiri Courts</strong><span>Malkajgiri</span><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Malkajgiri+District+Court+Kushaiguda+Hyderabad" target="_blank" rel="noopener noreferrer">Open in Google Maps ↗</a></div>
+        <div class="court"><strong>Kukatpally Courts</strong><span>Kukatpally</span><a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Kukatpally+Court+Complex+Prashanth+Nagar+Hyderabad" target="_blank" rel="noopener noreferrer">Open in Google Maps ↗</a></div>
+      </div>
+      <div class="note">This section identifies courts and forums where matters may be handled; it does not represent separate branch offices or imply that every type of case can be filed in every listed forum. The correct forum is determined by law.</div>
+    </section>
+
+    <section class="wrap" id="contact">
+      <div class="section-head"><div class="eyebrow">Contact Details</div><h2>M/s. K. L. Advocates and Associates</h2>
+        <p class="intro">For legal enquiries, consultation requests or document-related queries, please contact the office using the details below.</p>
+      </div>
+      <div class="contact-grid" style="color:var(--ink)">
+        <div>
+          <h3>Advocate & Office</h3>
+          <p><strong>Advocate:</strong> K.R.K.K SAGAR LOHIA</p>
+          <p><strong>Office name:</strong> M/s. K. L. Advocates and Associates</p>
+          <p><strong>Email:</strong> <a style="color:#8a672e" href="mailto:kladvocateoffice@gmail.com">kladvocateoffice@gmail.com</a></p>
+          <p><strong>Mobile:</strong> <a style="color:#8a672e" href="tel:+919000007954">9000007954</a> / <a style="color:#8a672e" href="tel:+917989067954">7989067954</a></p>
+          <p><strong>Office address:</strong><br>Flat 304, Taj Enclave Apartment,<br>6-1-1059, Khairatabad,<br>Hyderabad – 500004, Telangana, India.</p>
+        </div>
+        <div>
+          <h3>Send an Enquiry</h3>
+          <p>Please include your name, contact number, a short description of the matter and the relevant dates. You may attach notices, orders or other documents by email for preliminary review.</p>
+          <p><a class="btn gold" style="color:#101d2e" href="mailto:kladvocateoffice@gmail.com?subject=Legal%20Enquiry%20-%20M%2Fs.%20K.%20L.%20Advocates%20and%20Associates">Email the Office</a></p>
+          <p><strong>Call:</strong> <a style="color:#8a672e" href="tel:+919000007954">9000007954</a> | <a style="color:#8a672e" href="tel:+917989067954">7989067954</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+    <section class="wrap" id="disclaimer" style="padding-top:48px;padding-bottom:48px">
       <div class="section-head">
-        <p class="kicker">Get in touch</p>
-        <h2>Contact the office</h2>
-        <p>For appointments and enquiries, please contact the office by telephone or email.</p>
+        <div class="eyebrow">Important Information</div>
+        <h2>Disclaimer</h2>
       </div>
-      <div class="contact-grid">
-        <div class="contact-card">
-          <h3>Office address</h3>
-          <p>
-            6-1-1059, Flat 304,<br>
-            Taj Enclave Apartment,<br>
-            Khairatabad, Hyderabad – 500004,<br>
-            Telangana, India
-          </p>
-        </div>
-        <div class="contact-card">
-          <h3>Telephone</h3>
-          <p>
-            <a href="tel:+919000007954">9000007954</a><br>
-            <a href="tel:+917989067954">7989067954</a>
-          </p>
-        </div>
-        <div class="contact-card">
-          <h3>Email</h3>
-          <p><a href="mailto:kladvocateoffice@gmail.com">kladvocateoffice@gmail.com</a></p>
-        </div>
+      <div class="note" style="font:14px/1.75 Arial,sans-serif;color:#445064;background:#f7f4ed;border-left-width:4px">
+        <p><strong>Bar Council of India – No Advertisement or Solicitation</strong></p>
+        <p>The Bar Council of India Rules prohibit advocates from advertising or soliciting work, directly or indirectly. This website is made available solely to provide limited information about the office and the areas of law in which its members may be engaged, in accordance with applicable professional rules. By accessing this website, you acknowledge that you are doing so on your own initiative and that no advertisement, solicitation, invitation or inducement has been made by M/s. K. L. Advocates and Associates or its members.</p>
+        <p><strong>Informational Purpose Only</strong></p>
+        <p>The contents of this website, including descriptions of practice areas, are provided only for general informational purposes. They are not intended to be, and must not be treated as, legal advice, a legal opinion or a substitute for advice on the facts and documents of a particular matter. No person should act or refrain from acting on the basis of material on this website without obtaining appropriate professional advice.</p>
+        <p><strong>No Advocate–Client Relationship</strong></p>
+        <p>Accessing this website, reading its contents, or sending an email or other communication does not by itself create an advocate–client relationship. Such a relationship arises only after the office has completed its necessary checks and expressly accepted the engagement in accordance with applicable professional requirements. Please do not send confidential or time-sensitive information until the office has confirmed that it can receive it.</p>
+        <p><strong>No Warranty or Liability</strong></p>
+        <p>Although reasonable care may be taken in preparing website content, no representation or warranty, express or implied, is made as to its completeness, accuracy or currency. Laws, rules and procedures may change. M/s. K. L. Advocates and Associates shall not be responsible for any loss or consequence arising from reliance on information contained on this website, to the extent permitted by law.</p>
+        <p><strong>Intellectual Property</strong></p>
+        <p>Unless otherwise stated, the text, design and original materials on this website belong to M/s. K. L. Advocates and Associates and may not be reproduced or used without prior permission, except as permitted by law.</p>
+        <p><strong>By continuing to use this website, you acknowledge that you have read and understood this disclaimer.</strong></p>
       </div>
-      <p class="contact-note">
-        Please do not send confidential documents or sensitive personal information
-        until the office has confirmed a suitable and secure method of communication.
-      </p>
-    </div>
-  </section>
-
+    </section>
   <footer>
-    <div class="wrap">
-      <strong>K.R.K.K SAGAR LOHIA, Advocate</strong><br>
-      M/s. K. L. Advocates and Associates · Khairatabad, Hyderabad – 500004, Telangana, India<br>
-      © 2026 K. L. Advocates and Associates
-    </div>
+    <p>© <span id="year"></span> M/s. K. L. Advocates and Associates. All rights reserved.</p>
+    <p>Website information is general in nature and is not legal advice. An advocate-client relationship is not created merely by visiting this website or sending an enquiry.</p>
   </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
